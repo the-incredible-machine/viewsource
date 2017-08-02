@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'Tiempos';
-  src: url('fonts/TiemposHeadlineWeb-Medium.eot'); /* IE9 Compat Modes */
-  src: url('fonts/TiemposHeadlineWeb-Medium.eot?#iefix') format('embedded-opentype'),
-       url('fonts/TiemposHeadlineWeb-Medium.woff2') format('woff2'),
-       url('fonts/TiemposHeadlineWeb-Medium.woff') format('woff')
-}
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 *{
 	box-sizing: border-box;
 }
@@ -23,18 +16,22 @@
 .content{
   margin-bottom:5%;
   padding-top: 5%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 /* Set black background color, white text and some padding */
 footer {
   background-color: #fff;
   border-style:none;
-  border-bottom-style: solid;
-  border-bottom: 10px solid #ff0000;
+  border-top-style: solid;
+  border-top: 10px solid #ff0000;
   margin-top:10%;
-  /*padding: 15px;*/
+  padding: 15px;
+}
+.cc {
+  font-size: 9px;
+  text-align: right;
 }
 
 .vid{
@@ -59,36 +56,62 @@ footer {
   font-size: 12px
 }
 
+.credits_titles{
+  padding-top:0;
+  margin-top:0;
+}
+
+.row-credits{
+  margin-top:5px;
+}
+
+._nav{
+    list-style-type: none;
+    padding:0;
+}
+
+
+
+
 body{
   font-family: "Inconsolata", Consolas, monaco, monospace;
-
 }
-h1, h2, h3, p{
-  font-family: "Tiempos", "Times New Roman", Times, serif;
+h1, h2, h3{
+  font-family: 'Merriweather', serif;
 }
 a {
 	color: #333;
 	font-weight: 500;
 }
 a:hover{
-	opacity: .8;
-  color:#777;
+  color:#333;
   text-decoration: none;
 }
-a:visited{
-
+.inactive{
+  color:#D1D1D1;
+}
+.active{
+  color:#333;
+}
+a:active{
+  color:#333;
 }
 
 h1{
   font-size: 72px;
   margin:0px;
   padding:0px;
-  line-height: 40px;
+  line-height: 44px;
 }
 h2{
-  font-size: 56px;
+  font-size: 48px;
 }
+h3{
+  font-size: 20px;
+}
+
 p{
-  font-size: 16px;
+  font-size: 14px;
   font-weight:100;
+  vertical-align:bottom;
 }
