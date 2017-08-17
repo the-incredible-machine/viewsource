@@ -3,16 +3,6 @@
 	box-sizing: border-box;
 }
 
-/* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
-  border-radius: 0;
-  background-color: #fff;
-  border-style:none;
-  border-top-style: solid;
-  border-top: 10px solid #ff0000;
-}
-
-
 .content{
   margin-bottom:5%;
   padding-top: 5%;
@@ -52,9 +42,6 @@ footer {
 .mini-menu{
   margin-top:50px;
 }
-.music{
-  font-size: 12px
-}
 
 .credits_titles{
   padding-top:0;
@@ -75,16 +62,22 @@ footer {
 
 body{
   font-family: "Inconsolata", Consolas, monaco, monospace;
+  padding-top: 100px;
+  border-top: 10px solid red;
+  font-size: 16px;
+  line-height: 24px;
 }
 h1, h2, h3{
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Permanent Marker', cursive;
+
 }
 a {
 	color: #333;
 	font-weight: 500;
 }
 a:hover{
-  color:#333;
+  color:red;
   text-decoration: none;
 }
 .inactive{
@@ -93,25 +86,30 @@ a:hover{
 .active{
   color:#333;
 }
+small{
+  font-family: 'Permanent Marker', cursive;
+  color: red;
+  font-size: 48px !important;
+  line-height: 58px !important;
+}
 a:active{
   color:#333;
 }
 
 h1{
-  font-size: 72px;
+  font-size: 120px;
   margin:0px;
   padding:0px;
-  line-height: 44px;
+  line-height: 90px;
 }
 h2{
-  font-size: 48px;
+  font-size: 32px;
 }
 h3{
   font-size: 20px;
 }
 
 p{
-  font-size: 14px;
   font-weight:100;
   vertical-align:bottom;
 }
