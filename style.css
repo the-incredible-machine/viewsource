@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
 *{
 	box-sizing: border-box;
 }
 
 
 body{
-  font-family: "Inconsolata", Consolas, monaco, monospace;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   padding-top: 100px;
   border-top: 10px solid red;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   color: white;
   background-color: #111;
 }
@@ -35,17 +34,23 @@ h1{
   line-height: 90px;
 }
 h2{
-  font-size: 32px;
+  font-size: 64px;
+  margin-bottom: 32px;
 }
 h3{
-  font-size: 20px;
+  font-size: 32px;
+  margin-bottom: 16px;
 }
 
 p{
   font-weight:100;
   vertical-align:bottom;
 }
-
+.whitespace{
+  display: block;
+  width: 100%;
+  padding-top: 30%;
+}
 /* Set black background color, white text and some padding */
 footer {
   background-color: black;
