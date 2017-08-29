@@ -7,7 +7,7 @@ body{
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   padding-top: 100px;
   border-top: 10px solid red;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   color: white;
   background-color: #111;
@@ -16,22 +16,35 @@ body{
 a {
   color: white;
   font-weight: 500;
-  transition: all .3s;
+  transition: transform .3s;
+  text-decoration: underline;
 }
 a:hover{
   color:red;
   text-decoration: none;
-  transform: scale(1.1) rotateZ(-2deg);
+  transform: scale(1.1);
+}
+a:active{
+  color: white;
 }
 h1, h2, h3{
   font-family: 'Permanent Marker', cursive;
-
+}
+._nav a{
+  text-decoration: none !important;
 }
 h1{
   font-size: 120px;
   margin:0px;
   padding:0px;
   line-height: 90px;
+}
+small{
+  /*font-family: 'Permanent Marker', cursive;*/
+  color: red;
+  font-size: 32px !important;
+  font-weight: 200;
+  line-height: 64px !important;
 }
 h2{
   font-size: 64px;
@@ -49,44 +62,9 @@ p{
 .whitespace{
   display: block;
   width: 100%;
-  padding-top: 30%;
-}
-/* Set black background color, white text and some padding */
-footer {
-  background-color: black;
-  margin-top:200px;
-  padding: 15px;
-  height: 200px;
+  padding-top: 10%;
 }
 
-.cc {
-  font-size: 9px;
-  text-align: right;
-}
-
-.vid{
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  height: 0px;
-}
-  .vid iframe{
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-.credits_titles{
-  padding-top:0;
-  margin-top:0;
-}
-
-.row-credits{
-  margin-top:5px;
-}
 
 ._nav{
     position: relative;
@@ -101,21 +79,90 @@ footer {
     display: inline-block;
     margin: 0 10px;
   }
+
+.vid{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0px;
+  border-bottom: 1px solid red;
+}
+  .vid iframe{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+.content, .screenings, .publications{
+  position: relative;
+}
+
+ .content::after, .screenings::after, .publications::after {
+    content: "";
+    display:  block;
+    width: 80%;
+    padding-top: 48%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    transform: rotateZ(-5deg);
+    transform-origin: center center;
+    transition: 1s all;
+    opacity: .4;
+    z-index: -1;
+  }
+  .content::after{
+    background-image: url("img/photos/viewsource2.png");
+  }
+ 
+
+
+.partners{
+  text-align: center;
+}
+
+.partners a[href]{
+  font-size: 1px;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin: 20px;
+  color: transparent;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.credits{
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+  .credits li{
+    padding: 10px;
+    /*border-bottom: 1px solid #333;*/
+    display: inline-block;
+    width: 220px;
+    margin: 10px 10px 10px 0;
+  }
+  .credits a{
+    text-decoration: none;
+  }
+  .credits a>div{
+    font-size: 11px;
+    color: #ccc;
+  }
+
+footer {
+  background-color: black;
+  margin-top:200px;
+  padding: 100px 0;
+}
+
   
 
-
-.inactive{
-  color:#D1D1D1;
-}
-.active{
-  color:#333;
-}
-small{
-  font-family: 'Permanent Marker', cursive;
-  color: red;
-  font-size: 48px !important;
-  line-height: 58px !important;
-}
-a:active{
-  color:#333;
-}
